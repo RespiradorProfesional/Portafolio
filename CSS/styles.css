@@ -1,0 +1,191 @@
+:root {
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #ffc107;
+  --secundario: #0097a7;
+  --gris: #757575;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+table {
+  text-align: left;
+  margin: auto;
+}
+th {
+  text-align: center;
+}
+
+.Tabla a {
+  font-size: 40px;
+  text-decoration: none;
+  color: var(--oscuro);
+  font-style: oblique;
+  font-family: "Lato", sans-serif";
+}
+.Tabla a:hover {
+  background-color: var(--primario);
+  color: var(--oscuro);
+}
+
+.boton{
+  color: #ffffff;
+  background-color: var(--secundario);
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  border: none;
+  text-align: center  ;
+}
+
+@media (min-width: 480px){
+
+    .boton{
+      width: auto;
+    }
+}
+
+body {
+  font-size: 16px;
+  
+  font-family: sans-serif;
+  background-image: linear-gradient(to top, var(--gris)0%, var(--blanco)100%);
+
+  /*1rem = 10 px*/
+}
+
+.titulo {
+  font-size: 3.8rem;
+}
+
+h1.titulo span {
+  font-size: 2rem;
+}
+
+h2.titulo span {
+  font-size: 10rem;
+  font-family: "Lato", sans-serif; /*copiar link del google fonts en codigo y copiar aqui el font family en esp*/
+}
+
+.nav-bg {
+  background-color: var(--secundario);
+  padding: 1%;
+}
+
+.navegacion-principal {
+
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
+
+@media (min-width :480px) {
+
+  .navegacion-principal{
+    flex-direction:row;
+    justify-content: space-around;
+
+  }
+}
+
+/* Ctrl + shift + p y escribir snippets, a user a css, parausar codigos
+inventados para poner codigos por ejemplo mq (media ....)
+/* medidas 480px 768px 1140px 1400px*/
+
+
+
+
+.navegacion-principal a {
+  color: var(--blanco);
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline;
+}
+
+.navegacion-principal a:hover {
+  background-color: var(--primario);
+  color: var(--oscuro);
+
+}
+
+#tittle {
+  font-size: 9rem;
+  color: aqua; /*este no funciona*/
+}
+
+p {
+  font-size: 2.5rem;
+  color: coral;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto
+}
+
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  position: relative;
+
+}
+
+.contenido-hero{
+  
+  background-color: rgba(0 0 0 /70%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  /*
+  width = 2rem;
+  height = 2 rem;
+  bottom = 250px;
+  left = 250px;   
+  */
+
+}
+.contenido-hero h2,
+.contenido-hero p{
+
+  color: #ffffff;
+
+}
+
+.em {
+
+  font-size: 2rem;
+}
+
+.servicio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio .iconos {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--primario);
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+} 
